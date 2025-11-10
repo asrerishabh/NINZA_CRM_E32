@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="BROWSER" value="edge"/>
+    <classes>
+      <class name="CampaignTest.createCampaignTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="createCampaignWithStatusTest"/>
+          <include name="beforeSuite"/>
+          <include name="createCampaignWithExpectedCloseDate"/>
+          <include name="afterTest"/>
+          <include name="CreateContactWithMandatoryFieldsTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- CampaignTest.createCampaignTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="CampaignTest.createCampaignTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="createCampaignWithStatusTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="createCampaignWithExpectedCloseDate"/>
+          <include name="CreateContactWithMandatoryFieldsTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- CampaignTest.createCampaignTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

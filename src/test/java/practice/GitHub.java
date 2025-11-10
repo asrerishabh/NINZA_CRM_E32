@@ -7,5 +7,6 @@ public class GitHub {
 public 	void test()
 	{
 		System.out.println("commit changes");
+		System.out.println("conflict creation");
 	}
 }

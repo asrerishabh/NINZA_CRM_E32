@@ -10,8 +10,8 @@ public class WorkingWithAssertions {       //
 	 
 	 // hard assert
 		System.out.println("start");
-	    Assert.assertEquals("hdfc","hhdc");---. hard assert(static method ,here we dont create object and assertall method is not necessary)
-    	Assert. assertTrue("hdfc.equals("hfdc"));
+	    Assert.assertEquals("hdfc","hhdc");//---. hard assert(static method ,here we dont create object and assertall method is not necessary)
+    //	Assert. assertTrue("hdfc.equals("hfdc"));
     	Assert.assertNotEquals("hdfc", "hfdc");
     	Assert.assertEquals("hdfc", "hfdc");
 		System.out.println("end");  
@@ -19,15 +19,15 @@ public class WorkingWithAssertions {       //
 		String s="kavya";
 		Assert.assertNull(s);
 	
-		String s= null;
-		Assert.assertNotNull(s);
+		String s1= null;
+		Assert.assertNotNull(s1);
 		//softAssert
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals("hdfc","hfdc");//---> soft assert non static method so we  create object and assertall method.
 		System.out.println("end");
 		
 	    soft.assertNotEquals("hdfc", "hfdc");//--> assertNotEquals()
-		soft.assertTrue("hdfc.equals("hfdc"));
+	//	soft.assertTrue("hdfc.equals("hfdc"));
 	    soft.assertAll();
 	}
 }

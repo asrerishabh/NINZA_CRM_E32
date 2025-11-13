@@ -23,10 +23,10 @@ String password = prop.getProperty("password");
 	String USERNAME =plib.readDataFromProperty("Username");
 	String PASSWORD =plib.readDataFromProperty("password");
 
-System.out.println(Browser);
+System.out.println(BROWSER);
 System.out.println(URL);
-System.out.println(Username);
-System.out.println(password);
+System.out.println(USERNAME);
+System.out.println(PASSWORD);
 
 }
 }

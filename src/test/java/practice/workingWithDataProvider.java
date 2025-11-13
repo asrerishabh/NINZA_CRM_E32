@@ -41,8 +41,8 @@ public class workingWithDataProvider {
 		for(int i=1;i<=elib.getRowCount("DataProvider");i++)
 		{
 		
-        objArr[i-1][0]=elib.readDataFromExcelFile("DataProvider", i, 0);
-		objArr[i-1][1]=elib.readDataFromExcelFile("DataProvider", i, 1);
+        objArr[i-1][0]=elib.readDataFromExcel("DataProvider", i, 0);
+		objArr[i-1][1]=elib.readDataFromExcel("DataProvider", i, 1);
 		}	
 		
 		return objArr;
